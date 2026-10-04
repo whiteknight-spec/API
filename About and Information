@@ -1,0 +1,36 @@
+concept "API"
+
+1) Real world application example ("Weather App")
+
+Weather App("Frontend")
+     ↓
+  API Request
+     ↓
+Weather Server
+     ↓
+  Database
+     ↓
+Weather Data
+     ↓
+  API Response
+     ↓
+Weather App("Frontend")
+
+2) Flow of API with FastAPI
+
+Client
+  │
+  │ GET /students
+  ↓
+FastAPI
+  │
+  │ Python function
+  ↓
+Database
+  │
+  ↓
+FastAPI
+  │
+  │ JSON response
+  ↓
+Client
