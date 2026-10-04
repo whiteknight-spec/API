@@ -1,20 +1,24 @@
 concept "API"
 
-1) Real world application example ("Weather App")
+1) Real world application example ("any App")
 
-Weather App("Frontend")
-     ↓
-  API Request
-     ↓
-Weather Server
-     ↓
-  Database
-     ↓
-Weather Data
-     ↓
-  API Response
-     ↓
-Weather App("Frontend")
+User
+ ↓
+Frontend / App
+ ↓
+API
+ ↓
+Backend / Server
+ ↓
+Database
+ ↓
+Backend / Server
+ ↓
+API
+ ↓
+Frontend
+ ↓
+User
 
 2) Flow of API with FastAPI
 
@@ -34,3 +38,26 @@ FastAPI
   │ JSON response
   ↓
 Client
+
+
+Example:
+
+User: "Show my profile details"
+                ↓
+        GET /profile/123
+                ↓
+              API
+                ↓
+            Backend
+                ↓
+            Database
+                ↓
+       name, age, email...
+                ↓
+            Backend
+                ↓
+          JSON Response
+                ↓
+            Frontend
+                ↓
+             User
